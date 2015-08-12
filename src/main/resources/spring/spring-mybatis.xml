@@ -52,12 +52,12 @@
     
     <!-- 加载Mybatis 的 接口类型映射 -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="com.xmengy.life.xmytwis.dao.mapper"></property>
+		<property name="basePackage" value="com.creditease.oltp.tms.dao.mapper"></property>
 		<property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
 	</bean>
 	
 	<!-- 声明SuperDAO -->
-	<bean id="superDAO" class="com.xmengy.life.xmytwis.dao.SuperDAO">
+	<bean id="superDAO" class="com.creditease.oltp.tms.dao.SuperDAO">
 		<property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
 	</bean>
 	
